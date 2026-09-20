@@ -255,15 +255,13 @@ button {
 .photo-left { left: 5%; bottom: 13%; transform: rotate(-5deg); }
 .photo-right { right: 5%; bottom: 17%; transform: rotate(5deg); animation-delay: -3s; }
 .photo-frame {
-  width: 145px;
-  height: 178px;
-  padding: 7px 7px 26px;
-  background: #f8eedc;
-  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+  width: 220px;
+  height: 270px;
+  padding: 10px 10px 38px;
 }
 .photo-frame img {
   width: 100%;
-  height: 100%;
+  height: 220px;
   object-fit: contain;
   display: block;
   background:
