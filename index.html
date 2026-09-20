@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Birthday Evening ✦</title>
+  <meta name="description" content="A little birthday surprise.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="scene" id="scene">
+    <div class="sky"></div>
+    <div class="stars" aria-hidden="true"></div>
+    <div class="moon" aria-hidden="true"></div>
+
+    <!-- Balloons -->
+    <div class="balloon balloon-a"><span></span></div>
+    <div class="balloon balloon-b"><span></span></div>
+    <div class="balloon balloon-c"><span></span></div>
+    <div class="balloon balloon-d"><span></span></div>
+
+    <!-- Countryside -->
+    <div class="hill hill-back"></div>
+    <div class="hill hill-front"></div>
+    <div class="grass"></div>
+
+    <!-- Campfire -->
+    <div class="campfire" aria-label="A small campfire">
+      <div class="fire-glow"></div>
+      <div class="flame flame-one"></div>
+      <div class="flame flame-two"></div>
+      <div class="flame flame-three"></div>
+      <div class="log log-one"></div>
+      <div class="log log-two"></div>
+      <div class="sparks"><i></i><i></i><i></i><i></i></div>
+    </div>
+
+    <!-- Replace these two images with your friend's photos -->
+    <div class="photo-orbit photo-left">
+      <div class="photo-frame">
+        <img src="assets/friend-photo-1.jpeg" alt="Your friend's photo">
+      </div>
+      <span class="photo-caption">a little memory ✦</span>
+    </div>
+
+    <div class="photo-orbit photo-right">
+      <div class="photo-frame">
+        <img src="assets/friend-photo-2.jpeg" alt="Your friend's photo">
+      </div>
+      <span class="photo-caption">another little memory ✦</span>
+    </div>
+
+    <section class="birthday-card" id="birthdayCard">
+      <div class="eyebrow">a little birthday evening</div>
+
+      <div class="message-stage" aria-live="polite">
+        <p id="message" class="message"></p>
+      </div>
+
+      <div class="signature" id="signature">— hanz</div>
+
+      <div class="progress">
+        <span id="progressBar"></span>
+      </div>
+    </section>
+
+    <div class="intro" id="intro">
+      <div class="intro-card">
+        <div class="tiny-star">✦</div>
+        <h1>For you.</h1>
+        <p>There is a little birthday evening waiting on the other side.</p>
+        <button id="beginButton">begin the evening</button>
+        <p class="music-note">♫ turn your sound on for the piano</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="musicButton" class="control" aria-label="Toggle music">♫ <span>music</span></button>
+      <button id="replayButton" class="control" aria-label="Replay message">↻ <span>replay</span></button>
+    </div>
+
+    <!-- Put your own slow, wholesome piano MP3 here -->
+    <audio id="birthdayMusic" loop preload="auto">
+      <source src="assets/birthday-piano.mp3" type="audio/mpeg">
+    </audio>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
